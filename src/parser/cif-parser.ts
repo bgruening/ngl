@@ -959,7 +959,7 @@ class CifParser extends StructureParser {
         const bondOrderField = ccb.getField('value_order')!
 
         for (let i = 0; i < ccb.rowCount; i++) {
-          const order = valueOrder2bondOrder[bondOrderField.str(i)]
+          const order = valueOrder2bondOrder[bondOrderField.str(i).toUpperCase()]
           if (!order) continue;
           s.chemCompMap.addBond(resnameField.str(i), atom1Field.str(i), atom2Field.str(i), order)
         }
