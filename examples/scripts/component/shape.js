@@ -17,6 +17,7 @@ shape.addTetrahedron([ 27, 0, 1 ], [ 0, 1, 0 ], 2, [ 0, 1, 1 ], [ 1, 0, 1 ])
 shape.addOctahedron([ 8, 5, 14 ], [ 0, 1, 0 ], 2, [ 0, 1, 1 ], [ 1, 0, 1 ])
 shape.addTorus([ 16, 5, 14 ], [ 0, 1, 0 ], 2, [ 0, 1, 1 ], [ 1, 0, 1 ])
 shape.addText([ 15, -4, 4 ], [ 0.2, 0.5, 0.8 ], 2.5, 'Hello')
+shape.addIcosahedron([ 3, 3, 3 ], [ 1, 0, 1 ], 2, [ 0, 1, 1 ], [ 1, 0, 1 ]);
 
 var shapeComp = stage.addComponentFromObject(shape)
 shapeComp.addRepresentation('buffer')
